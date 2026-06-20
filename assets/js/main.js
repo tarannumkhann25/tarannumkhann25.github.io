@@ -11,8 +11,25 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
+const syncSidebarState = function () {
+  if (!sidebar) return;
+
+  if (window.innerWidth <= 767) {
+    sidebar.classList.add("active");
+  } else {
+    sidebar.classList.remove("active");
+  }
+};
+
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+if (sidebarBtn && sidebar) {
+  sidebarBtn.addEventListener("click", function () {
+    elementToggleFunc(sidebar);
+  });
+}
+
+window.addEventListener("resize", syncSidebarState);
+syncSidebarState();
 
 
 

@@ -325,8 +325,8 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { 
-  max-height: auto; 
+.sidebar.active {
+  max-height: none;
 }
 
 .sidebar-info {
@@ -624,6 +624,20 @@ main {
   article {
     width: 100%;
     max-width: 100%;
+  }
+
+  .sidebar {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  .sidebar-info_more {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .info_more-btn {
+    display: none;
   }
 
   .sidebar,
