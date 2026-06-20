@@ -24,50 +24,50 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    to bottom right,
+    #7b1e3a 3%,
+    #3f1022 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    to bottom right,
+    hsla(336, 49%, 18%, 0.35) 0%,
+    hsla(336, 40%, 10%, 0) 100%
+  ), #2a1120;
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    to bottom right,
+    #f5ebd0 0%,
+    hsla(40, 65%, 86%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    135deg,
+    hsla(40, 65%, 86%, 0.25) 0%,
+    hsla(40, 65%, 86%, 0) 59.86%
+  ), #2a1120;
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    to bottom right,
+    #5a2137 0%,
+    hsla(336, 50%, 18%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    to right,
+    #f5ebd0,
+    #e5c9a3
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --jet: #5a2137;
+  --onyx: #3f1022;
+  --eerie-black-1: #241019;
+  --eerie-black-2: #1b0c14;
+  --smoky-black: #12090d;
+  --white-1: #f5ebd0;
+  --white-2: #f9f2d8;
+  --orange-yellow-crayola: #d8a57d;
+  --vegas-gold: #b67862;
+  --light-gray: #e8d6b5;
+  --light-gray-70: hsla(39, 58%, 82%, 0.7);
+  --bittersweet-shimmer: #9a4f64;
 
   /**
    * typography
@@ -301,7 +301,7 @@ article.active {
 \*-----------------------------------*/
 
 main {
-  margin: 15px 12px;
+  margin: 15px 18px;
   margin-bottom: 75px;
   min-width: 259px;
 }
@@ -2146,7 +2146,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     justify-content: center;
     align-items: stretch;
-    /* gap: 25px; */
+    gap: 40px;
+    padding-inline: 24px;
   }
 
   .main-content {
