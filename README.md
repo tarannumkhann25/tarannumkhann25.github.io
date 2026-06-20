@@ -1,44 +1,40 @@
-# vCard - Personal portfolio
+# Tarannum Khan — Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A personal portfolio website showcasing experience in international relations, community engagement, event protocol coordination, and leadership. Built with HTML and CSS, hosted on GitHub Pages.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Contents
 
-## Demo
+- **About** — Overview of professional background and interests
+- **Experience** — Work history including protocol coordination, campaign leadership, and administrative roles
+- **Education** — Master's degree at Jamia Millia Islamia; Bachelor's at Daulat Ram College
+- **Positions of Responsibility** — Student leadership and organisational roles
+- **Skills & Interests** — Languages (English, Hindi, German), soft skills, and professional interests
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Features
 
-## Prerequisites
+- Clean, responsive design
+- Semantic HTML structure
+- Performance optimizations (DNS prefetch, preload)
+- Mobile-friendly layout
+- Direct contact links
 
-Before you begin, ensure you have met the following requirements:
+## Links
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- **Email:** tarannumkhann25@gmail.com
+- **Phone:** +91 8750674330
+- **LinkedIn:** https://www.linkedin.com/in/tarannumkhan25/
+- **GitHub:** https://github.com/tarannumkhann25
 
-## Installing vCard
+## Original Resume
 
-To install **vCard**, follow these steps:
+This portfolio is based on a LaTeX resume highlighting:
+- Protocol work at New Delhi World Book Fair (2024–2026)
+- Project leadership for women's empowerment campaign (2023)
+- Event organisation & MUN coordination (2020–2021)
+- Various positions of responsibility in student organisations
 
-Linux and macOS:
+For full resume details, please reach out via email or LinkedIn.
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+---
 
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+Built with HTML & CSS. Hosted on GitHub Pages. © 2026 Tarannum Khan
