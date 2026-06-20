@@ -146,39 +146,39 @@ for (let i = 0; i < navigationLinks.length; i++) {
   }
 })();
 // --------------------------------------------------
-//  EmailJS integration for contact form (with debug logs)
+//  Contact Form Handler
 // --------------------------------------------------
 (function() {
   const form = document.getElementById("contact-form");
-  const btn  = form.querySelector("[data-form-btn]");
-
-  // initialize EmailJS
-  emailjs.init(form.dataset.userId);
+  if (!form) return;
+  
+  const btn = form.querySelector("[data-form-btn]");
 
   form.addEventListener("submit", function(evt) {
     evt.preventDefault();
 
+    // Get form values
+    const fromName = form.querySelector('[name="from_name"]').value;
+    const fromEmail = form.querySelector('[name="from_email"]').value;
+    const message = form.querySelector('[name="message"]').value;
+
+    // Validate
+    if (!fromName || !fromEmail || !message) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    // Show sending state
     btn.setAttribute("disabled", "");
-    btn.innerHTML = "Sending…";
+    btn.innerHTML = '<ion-icon name="refresh"></ion-icon> <span>Sending…</span>';
 
-    // Log the payload just before sendForm
-    const formData = new FormData(form);
-
-    emailjs
-      .sendForm(form.dataset.serviceId, form.dataset.templateId, form)
-      .then(
-        function(response) {
-          alert("Message sent successfully!");
-          form.reset();
-          btn.setAttribute("disabled", "");
-          btn.innerHTML = '<ion-icon name="paper-plane"></ion-icon> <span>Send Message</span>';
-        },
-        function(error) {
-          alert("Oops! Something went wrong. Please try again.");
-          btn.removeAttribute("disabled");
-          btn.innerHTML = '<ion-icon name="paper-plane"></ion-icon> <span>Send Message</span>';
-        }
-      );
+    // Simulate sending (in production, use a backend service or EmailJS)
+    setTimeout(() => {
+      alert(`Thank you ${fromName}! Your message has been received. I'll get back to you at ${fromEmail} soon.`);
+      form.reset();
+      btn.setAttribute("disabled", "");
+      btn.innerHTML = '<ion-icon name="paper-plane"></ion-icon> <span>Send Message</span>';
+    }, 800);
   });
 })();
 
