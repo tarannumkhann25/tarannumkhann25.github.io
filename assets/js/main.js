@@ -21,14 +21,18 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-select-value]"); // FIXED: removed extra 'c'
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
+}
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
+
+    if (!selectValue || !select) return;
 
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
@@ -58,43 +62,24 @@ const filterFunc = function (selectedValue) {
 }
 
 // add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+if (filterBtn.length > 0 && selectValue) {
+  let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
+  for (let i = 0; i < filterBtn.length; i++) {
 
-  filterBtn[i].addEventListener("click", function () {
+    filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
+      let selectedValue = this.innerText.toLowerCase();
+      selectValue.innerText = this.innerText;
+      filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+      lastClickedBtn.classList.remove("active");
+      this.classList.add("active");
+      lastClickedBtn = this;
 
-  });
+    });
 
-}
-
-
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
+  }
 }
 
 
@@ -145,43 +130,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
     activateNav(key);
   }
 })();
-// --------------------------------------------------
-//  Contact Form Handler
-// --------------------------------------------------
-(function() {
-  const form = document.getElementById("contact-form");
-  if (!form) return;
-  
-  const btn = form.querySelector("[data-form-btn]");
 
-  form.addEventListener("submit", function(evt) {
-    evt.preventDefault();
+// Make the nav buttons work reliably even when the DOM is loaded after scripts
+window.addEventListener("DOMContentLoaded", function () {
+  const navButtons = document.querySelectorAll("[data-nav-link]");
+  const articles = document.querySelectorAll("[data-page]");
 
-    // Get form values
-    const fromName = form.querySelector('[name="from_name"]').value;
-    const fromEmail = form.querySelector('[name="from_email"]').value;
-    const message = form.querySelector('[name="message"]').value;
+  navButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const pageKey = this.textContent.trim().toLowerCase();
 
-    // Validate
-    if (!fromName || !fromEmail || !message) {
-      alert("Please fill in all fields");
-      return;
-    }
+      articles.forEach((article) => {
+        article.classList.toggle("active", article.dataset.page === pageKey);
+      });
 
-    // Show sending state
-    btn.setAttribute("disabled", "");
-    btn.innerHTML = '<ion-icon name="refresh"></ion-icon> <span>Sending…</span>';
+      navButtons.forEach((btn) => {
+        btn.classList.toggle("active", btn === this);
+      });
 
-    // Simulate sending (in production, use a backend service or EmailJS)
-    setTimeout(() => {
-      alert(`Thank you ${fromName}! Your message has been received. I'll get back to you at ${fromEmail} soon.`);
-      form.reset();
-      btn.setAttribute("disabled", "");
-      btn.innerHTML = '<ion-icon name="paper-plane"></ion-icon> <span>Send Message</span>';
-    }, 800);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   });
-})();
-
+});
 // --------------------------------------------------
 //  Service Worker Registration for Performance & Offline Support
 // --------------------------------------------------
