@@ -155,7 +155,10 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black);
+  overflow-x: hidden;
+}
 
 
 
@@ -304,6 +307,7 @@ main {
   margin: 15px 18px;
   margin-bottom: 75px;
   min-width: 259px;
+  padding-bottom: 80px;
 }
 
 
@@ -360,6 +364,9 @@ main {
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: center;
   padding: 3px 12px;
   border-radius: 8px;
 }
@@ -421,8 +428,8 @@ main {
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  flex: 1;
+  min-width: 0;
 }
 
 .contact-title {
@@ -435,6 +442,8 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .contact-info address { font-style: normal; }
@@ -488,6 +497,7 @@ main {
 
 .navbar-item {
   position: relative;
+  flex: 0 1 auto;
 }
 
 .navbar-item:not(:last-child)::after {
@@ -506,6 +516,7 @@ main {
   font-size: var(--fs-8);
   padding: 10px 12px;
   border-radius: 999px;
+  white-space: nowrap;
   transition: color var(--transition-1), background var(--transition-1);
 }
 
@@ -605,6 +616,102 @@ main {
     width: 40px;
     height: 40px;
   }
+}
+
+@media (max-width: 767px) {
+  .main-content,
+  .sidebar,
+  article {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sidebar,
+  article {
+    padding: 14px;
+  }
+
+  .navbar {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .navbar-list {
+    gap: 4px;
+    padding: 6px 8px;
+  }
+
+  .navbar-link {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .navbar-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .interests-text {
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .carousel-control {
+    width: 36px;
+    height: 36px;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .resume-date {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 10px 10px 90px;
+  }
+
+  .sidebar,
+  article {
+    border-radius: 16px;
+  }
+
+  .info-content .name {
+    font-size: 1rem;
+  }
+
+  .info-content .title {
+    font-size: 0.78rem;
+  }
+
+  .navbar-link {
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+  }
+
 }
 
 
