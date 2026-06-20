@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Warid Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - performance optimizations
+  -->
+  <!-- Preload critical above-the-fold image -->
+  <link rel="preload" as="image" href="./assets/images/my-avatar.png">
+  
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Mohammad Warid" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mohammad Warid">Mohammad Warid</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:mohdwarid4@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">mohdwarid4@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919911762049" class="contact-link" target="_blank" rel="noopener noreferrer">+919911762049</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Delhi, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/waridrox" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/waridrox" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/waridrox" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+          <!--active-->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Interests</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blogs</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="interests  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About</h2>
+        </header>
+
+
+        <section class="interests-text">
+          <h4 class="hero-title">Hi 👋🏻, I'm Warid</h4>
+          <p class="hero-subtitle">I'm a Full Stack Software Engineer with a background in AI & DevOps Engineering.</p>
+          <p class="hero-subtitle">Being an open-source software fanatic, I have contributed to several projects, both voluntarily and through funded programs such as Google Summer of Code, Linux Mentorship, and Summer of Bitcoin. You can find these contributions below:</p>
+        </section>
+      
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <!-- ML4Sci Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/ml4sci.png" alt="ML4Sci" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">ML4Sci</h3>
+                  </div>
+                  <a href="https://github.com/waridrox/e2e_sparse" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Probabl.ai Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/probabl.png" alt="Probabl" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Probabl</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Aprobabl-ai+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+    
+      
+            <!-- CERN-HSF Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/logo-4-color.png" alt="CERN-HSF" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">CERN-HSF</h3>
+                  </div>
+                  <a href="https://github.com/waridrox/ep_sciencemesh" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+            <!-- bcoin Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/bcoin.png" alt="bcoin" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Bcoin</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Abcoin-org+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Public Lab Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/logo-7-color.png" alt="Public Lab" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Public Lab</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Apubliclab+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- GitLab Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/gitlab.jpg" alt="GitLab" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">GitLab</h3>
+                  </div>
+                  <a href="https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=all&author_username=waridrox" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+
+            <!-- GitLab-ui Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/gitlab.jpg" alt="GitLab UI" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">GitLab UI</h3>
+                  </div>
+                  <a href="https://gitlab.com/gitlab-org/gitlab-ui/-/merge_requests?scope=all&state=all&author_username=waridrox" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Moja Global Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/logo-8-color.png" alt="Moja Global" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Moja Global</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Amoja-global+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+
+
+            <!-- Creative Commons Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/cc.png" alt="Creative Commons" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Creative Commons</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Acc-archive+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+
+            <!-- Appwrite Contributions -->
+            <li class="blog-post-item">
+              <div class="oss-card">
+                <div class="oss-card-content">
+                  <div class="oss-logo">
+                    <img src="./assets/images/appwrite.png" alt="Appwrite" loading="lazy">
+                  </div>
+                  <div class="oss-info">
+                    <h3 class="h3 oss-title">Appwrite</h3>
+                  </div>
+                  <a href="https://github.com/search?q=org%3Aappwrite+author%3Awaridrox+type%3Apr&type=pullrequests" target="_blank" class="oss-contributions-btn">
+                    <ion-icon name="git-pull-request-outline"></ion-icon>
+                    <span>See Contributions</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </section>
+      
+      </article>
+
+
+      <article class="interests" data-page="interests">
+
+        <header>
+          <h2 class="h2 article-title">Interests</h2>
+        </header>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I currently vibe with</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack and Data Engineering</h4>
+
+                <p class="service-item-text">
+                  Keeping up with the latest trends in full stack development and data engineering, building scalable applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Full Stack Engineering</h4>
+
+                <p class="service-item-text">
+                  Currently I am self-learning AI by building personal projects leveraging full stack engineering.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-hiking.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Conquering mountain peaks</h4>
+
+                <p class="service-item-text">
+                  Whenever I get a chance, I go on a hike to conquer a mountain peak, and capture the beauty of nature.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  Besides work, I fly drones to capture life at high-quality pixels.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Organizations that I've worked with</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://obmondo.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-9-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.ua.edu/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-0-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://probabl.ai/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.nordblock.fi/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://ronianalytics.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://bcoin.io/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://en.wikipedia.org/wiki/Public_Lab" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-7-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://moja.global/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-8-color.png" alt="client logo">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <!-- <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Delhi Technological University</h4>
+
+               <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Pursued bachelors in Environmental Engineering with a minors degree in Computer Science Engineering from Delhi Technological University, one of the prestigious institutions in India established in 1941.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+        
+         <ol class="timeline-list">
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Freelance Software Engineer, Upwork</h4>
+            <span>March 2025 – Present</span>
+            <p class="timeline-text">
+              
+              Developing a cross-platform Voice-to-Text app with Electron & React.js, featuring a global push-to-talk shortcut and Whisper AI-based transcription functionality. Integrating Stripe for payments in a freemium model setting.
+              <br>
+              <strong>Tech stack:</strong> Node.js, Express, Electron.js, TypeScript, React.js, Whisper AI, OpenAI LLMs, Stripe
+            </p>
+          </li>
+        
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Machine Learning Researcher, University of Alabama</h4>
+            <span>April 2025 – Present</span>
+            <p class="timeline-text">
+              Designing and implementing a scalable MLOps sparse autoencoder pipeline for classifying and reconstructing particle collision events using minimally processed detector image data. Working under the guidance of Dr. Sergei V. Gleyzer.
+              <br>
+              <strong>Tech stack:</strong> Python, PyTorch, NumPy, Git, MLFlow, HPC, SLURM
+            </p>
+          </li>
+        
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Data Analytics & DevOps Engineer, Nordblock.fi</h4>
+            <span>September 2024 – February 2025</span>
+            <p class="timeline-text">
+              Deployed a monitoring system with Prometheus, Grafana, and InfluxDB to track carbon-neutral bitcoin mining data heat centers in Nordic regions. Aggregated logs using ElasticSearch and Kibana from AWS S3 for rapid debugging and performance analysis of energy-to-heat conversion processes. Built scalable analytics pipelines with Apache Spark and Kafka, leveraging Docker and Kubernetes. Orchestrated ETL workflows with Apache Airflow to ensure timely and reliable data processing.
+              <br>
+              <strong>Tech stack:</strong> Kubernetes, Docker, Prometheus, Grafana, InfluxDB, ElasticSearch, Kibana, Apache Spark, Kafka, Airflow, Linux, Python, Shell scripting, Git, Amazon Web Services (AWS)
+            </p>
+          </li>
+        
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Software Engineer, CERN (European Organization for Nuclear Research)</h4>
+            <span>June 2023 – July 2024</span>
+            <p class="timeline-text">
+              Architected and maintained systems for a 6K-user global CMS experiment collaboration, optimizing publication, personnel, and institute management for reliability and scalability. Developed iCMS-teams for new user registration and iCMS-statistics for institute analysis, implementing visualizations for interactive analytics. Built scalable microservices and web applications using Python (Django, Flask API), Java (Spring Boot), and Vue.js with comprehensive CI/CD pipelines. Automated database synchronization and resource optimization using CRON jobs, Bash, and Python scripts.
+              <br>
+              <strong>Tech stack:</strong> Python, Django, Flask, Java (Spring Boot), Javascript, Typescript, Vue.js, Databases (PostgreSQL, MariaDB, OracleDB), Pytest, Redis, Linux, Docker, Bash, Git, GitLab CI/CD, Helm, OpenShift
+            </p>
+          </li>
+        
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Software Engineering Intern, Roni Analytics</h4>
+            <span>February 2023 – May 2023</span>
+            <p class="timeline-text">
+              Contributed as part of the co-founding team of a startup, developing a crypto analysis tool incorporating real-time metrics from Ethereum-based layer 1 blockchains. Designed and optimized Spark SQL queries on Hadoop HDFS systems to process large-scale blockchain datasets for efficient analysis and backtesting workflows. Prototyped an interactive analytics dashboard using Chart.js and a Node.js API, then containerized the application with Docker and orchestrated it on Kubernetes.
+              <br>
+              <strong>Tech stack:</strong> Python, React.js, Node.js, Apache Spark, Hadoop HDFS, Docker, Kubernetes
+            </p>
+          </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern, CERN-HSF (Google Summer of Code)</h4>
+              <span>May 2022 – August 2022</span>
+              <p class="timeline-text">
+                Developed and published an Etherpad plugin via NPM to enable collaborative file-sharing across the CS3 Science Mesh platform using Golang REST APIs.  
+                <br>
+                <strong>Tech stack:</strong> JavaScript, Node.js, Golang, Docker
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern, bcoin (Summer of Bitcoin)</h4>
+              <span>May 2022 – August 2022</span>
+              <p class="timeline-text">
+                Adapted Bitcoin-Core compact block relay (BIP152) in the bcoin library; implemented end-to-end tests to raise coverage by 40%.  
+                <br>
+                <strong>Tech stack:</strong> JavaScript, Node.js, C++, Mocha
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern, Public Lab (Google Summer of Code)</h4>
+              <span>May 2021 – August 2021</span>
+              <p class="timeline-text">
+                Updated a spectrometry data-analysis library for cross-browser WebRTC camera switching; added mapping integrations and boosted test coverage by 30%.  
+                <br>
+                <strong>Tech stack:</strong> JavaScript, Ruby on Rails, WebRTC, Leaflet.js, Cypress
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern, moja Global (Linux Foundation Mentorship Program)</h4>
+              <span>June 2021 – September 2021</span>
+              <p class="timeline-text">
+                Prototyped a Vue.js dashboard interfacing with Flask APIs; containerized via Docker and managed infra with Terraform on GCP.  
+                <br>
+                <strong>Tech stack:</strong> Vue.js, Python, Flask, Docker, Terraform, GCP, AWS, Azure
+              </p>
+            </li>
+        
+          </ol>
+        
+        </section>
+        
+        
+        <section class="skill">
+        
+          <h3 class="h3 skills-title">My skills</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Full Stack Engineering & API Development</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps & Cloud Engineering</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+      </article> -->
+        
+
+
+
+
+
+<!--
+  - #PORTFOLIO
+-->
+<article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <!-- filter buttons -->
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+      <li class="filter-item"><button data-filter-btn>Data Engineering</button></li>
+      <li class="filter-item"><button data-filter-btn>Web development</button></li>
+      <li class="filter-item"><button data-filter-btn>Machine Learning</button></li>
+      <li class="filter-item"><button data-filter-btn>Applications</button></li>
+    </ul>
+
+    <!-- select dropdown for mobile -->
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-select-value>Select category</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="filter-item"><button data-filter-item>Data Engineering</button></li>
+        <li class="select-item"><button data-select-item>Web development</button></li>
+        <li class="select-item"><button data-select-item>Machine Learning</button></li>
+        <li class="select-item"><button data-select-item>Applications</button></li>
+      </ul>
+    </div>
+
+    <!-- project grid -->
+    <ul class="project-list">
+
+        <!-- Data Engineering Projects -->
+      <li class="project-item active" data-filter-item data-category="data engineering">
+        <a href="https://github.com/waridrox/f1_insights" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/f1-real-time-analytics.png" alt="F1 Real-Time Analytics Pipeline" loading="lazy">
+          </figure>
+          <h3 class="project-title">F1 Real-Time Analytics Pipeline</h3>
+          <p class="project-category">Data Engineering</p>
+        </a>
+      </li>
+    
+      <li class="project-item active" data-filter-item data-category="data engineering">
+        <a href="https://github.com/waridrox/etl-databricks" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/etl-databricks.png" alt="ETL Pipelines for Apple Products Analysis" loading="lazy">
+          </figure>
+          <h3 class="project-title">ETL Pipelines for Apple Products Analysis</h3>
+          <p class="project-category">Data Engineering</p>
+        </a>
+      </li>
+
+      <!-- Web Development -->
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/rapid-polls" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/rapid-polls.png" alt="Rapid Polls" loading="lazy">
+          </figure>
+          <h3 class="project-title">Rapid Polls</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/password-manager-django" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/django-react.png" alt="Django Password Manager" loading="lazy">
+          </figure>
+          <h3 class="project-title">Django Password Manager</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/nuxt-notes" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/nuxt-todo.png" alt="Nuxt Notes App" loading="lazy">
+          </figure>
+          <h3 class="project-title">Nuxt Todo</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/flash-type" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/flash-type.png" alt="Flash Type" loading="lazy">
+          </figure>
+          <h3 class="project-title">Flash Type</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
+
+      <!-- Machine Learning Projects -->
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/waridrox/mental-healthcare-chatbot" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/mental-healthcare-chatbot-app.png"
+                 alt="Mental Healthcare Chatbot App"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Mental Healthcare Chatbot App</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/waridrox/dna-sequence-classification" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/dna-sequence-app.png"
+                 alt="Cross-Species DNA Sequence Classification using K-mer Analysis"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Cross-Species DNA Sequence Classification using K-mer Analysis</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+      
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/waridrox/multi-agent-workout-app" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/multi-agent-workout-app.png"
+                 alt="Multi-Agent AI Workout App"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Multi-Agent AI Workout App</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/waridrox/aqi-prediction" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/aqi-prediction.png"
+                 alt="Air Quality Index Predictor – COVID-19 Analysis"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">AQI Predictor & COVID-19 Analysis</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/waridrox/customer-satisfaction" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/customer-satisfaction.png"
+                 alt="Customer Satisfaction Prediction Pipeline"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Customer Satisfaction Prediction Pipeline</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/fractaloid007/kindey-CNN" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img
+              src="./assets/images/kidney-cnn.png"
+              alt="Kidney CNNs"
+              loading="lazy"
+            >
+          </figure>
+          <h3 class="project-title">Kidney CNNs</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="machine learning">
+        <a href="https://github.com/fractaloid007/llm-rag-workshop" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img
+              src="./assets/images/llm-rag-workshop.png"
+              alt="LLM RAG Workshop"
+              loading="lazy"
+            >
+          </figure>
+          <h3 class="project-title">LLM RAG Workshop</h3>
+          <p class="project-category">Machine Learning</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/dapp-dropbox-clone" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/dapp-dropbox-clone.png" alt="DApp-Dropbox Clone" loading="lazy">
+          </figure>
+          <h3 class="project-title">DApp-Dropbox Clone</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="applications">
+        <a href="https://github.com/waridrox/realtime-voting-system" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/realtime-voting-system.png"
+                 alt="Real-time Election Voting System"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Real-time Election Voting System</h3>
+          <p class="project-category">Applications</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="applications">
+        <a href="https://github.com/waridrox/downloader" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/downloader.png"
+                 alt="Concurrent File Downloader"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Concurrent File Downloader</h3>
+          <p class="project-category">Applications</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/waridrox/space-launches" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/space-launches.png"
+                 alt="Space Launch Scheduler"
+                 loading="lazy">
+          </figure>
+          <h3 class="project-title">Space Launch Scheduler</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
+
+
+      <li class="project-item active" data-filter-item data-category="applications">
+        <a href="https://github.com/fractaloid007/food-order-kafka" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img
+              src="./assets/images/food-order-kafka.png"
+              alt="Food Order Kafka"
+              loading="lazy"
+            >
+          </figure>
+          <h3 class="project-title">Food Order Kafka</h3>
+          <p class="project-category">Applications</p>
+        </a>
+      </li>
+      
+    </ul>
+
+  </section>
+
+</article>
+
+    <!--
+  - #BLOG
+-->
+<article class="blog" data-page="blogs">
+
+  <header>
+    <h2 class="h2 article-title">Blogs</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      <!-- GSoC 2022 Final Project Report -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@waridrox/gsoc-2022-final-project-report-c206883936fa" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-gsoc22-final.png"
+                 alt="GSoC 2022 at CERN-HSF: Final Project Report"
+                 loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">GSoC 2022</p>
+              <span class="dot"></span>
+              <time datetime="2022-09-12">Sep 12, 2022</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">GSoC 2022 at CERN-HSF: Final Project Report</h3>
+
+            <p class="blog-text">
+              My final report on implementing the Etherpad plugin for ScienceMesh during GSoC 2022 at CERN-HSF.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <!-- GSoC 2022 Experience Part 1 -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@waridrox/gsoc-2022-at-cern-hsf-experience-9427429f9bfd" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-gsoc22-exp.png"
+                 alt="GSoC 2022 at CERN-HSF: Experience (Part 1)"
+                 loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">GSoC 2022</p>
+              <span class="dot"></span>
+              <time datetime="2022-07-15">Jul 15, 2022</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">GSoC 2022 at CERN-HSF: Experience (Part 1)</h3>
+
+            <p class="blog-text">
+              Reflecting on my community bonding and initial coding period while building the Etherpad plugin.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <!-- LFX 2021 at Moja Global -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@waridrox/lfx-2021-experience-at-moja-global-4308b584795a" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-lfx21-moja.png"
+                 alt="LFX 2021 experience at Moja Global"
+                 loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">LFX 2021</p>
+              <span class="dot"></span>
+              <time datetime="2022-07-15">Jul 15, 2022</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">LFX 2021 experience at Moja Global</h3>
+
+            <p class="blog-text">
+              How I built a Vue.js GUI for FLINT during the Linux Foundation Mentorship in 2021.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <!-- Compact Blocks in bcoin -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@waridrox/compact-blocks-in-bcoin-part-1-838dcb71ed72" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-bcoin-compact.png"
+                 alt="Compact blocks in bcoin"
+                 loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">Blockchain</p>
+              <span class="dot"></span>
+              <time datetime="2022-07-08">Jul 8, 2022</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Compact blocks in bcoin</h3>
+
+            <p class="blog-text">
+              Improving BIP152 protocol support and peer‐to‐peer tests in the bcoin Node.js library.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <!-- GSoC 2021 Final Report -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@waridrox/gsoc-2021-at-public-lab-final-report-7347b7edf466" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-gsoc21-publiclab.png"
+                 alt="GSoC 2021 at Public Lab: Final Report"
+                 loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">GSoC 2021</p>
+              <span class="dot"></span>
+              <time datetime="2021-08-23">Aug 23, 2021</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">GSoC 2021 at Public Lab: Final Report</h3>
+
+            <p class="blog-text">
+              Integrating SW.js with Ruby on Rails and enhancing the spectral-workbench.js capture interface.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+</article>
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Let's Connect!</h3>
+          <!-- add id and data attributes for emailjs -->
+          <form
+            id="contact-form"
+            action="#"
+            class="form"
+            data-form
+            data-service-id="service_czifj0a"
+            data-template-id="template_7r60z7l"
+            data-user-id="Jff11J6Q6dqgMUisp"
+          >
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="from_name"
+                class="form-input"
+                placeholder="Full name (can't be empty)"
+                required
+                data-form-input
+              />
+              <input
+                type="email"
+                name="from_email"
+                class="form-input"
+                placeholder="Email address (can't be invalid)"
+                required
+                data-form-input
+              />
+            </div>
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message (can't be empty)"
+              required
+              data-form-input
+            ></textarea>
+            <button
+              class="form-btn"
+              type="submit"
+              data-form-btn
+              disabled
+            >
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+        
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer>
+</script>
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+
+</html>
