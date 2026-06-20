@@ -152,6 +152,58 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Overview carousel functionality
+const carousel = document.querySelector("[data-carousel]");
+if (carousel) {
+  const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
+  const prevButton = carousel.querySelector("[data-carousel-prev]");
+  const nextButton = carousel.querySelector("[data-carousel-next]");
+  let currentIndex = 0;
+  let autoplayId;
+
+  const updateCarousel = function (index) {
+    currentIndex = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("active", slideIndex === currentIndex);
+    });
+  };
+
+  const startAutoplay = function () {
+    stopAutoplay();
+    autoplayId = window.setInterval(() => {
+      updateCarousel(currentIndex + 1);
+    }, 4000);
+  };
+
+  const stopAutoplay = function () {
+    if (autoplayId) {
+      window.clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  };
+
+  if (prevButton && nextButton && slides.length > 1) {
+    prevButton.addEventListener("click", function () {
+      updateCarousel(currentIndex - 1);
+      startAutoplay();
+    });
+
+    nextButton.addEventListener("click", function () {
+      updateCarousel(currentIndex + 1);
+      startAutoplay();
+    });
+
+    carousel.addEventListener("mouseenter", stopAutoplay);
+    carousel.addEventListener("mouseleave", startAutoplay);
+  }
+
+  updateCarousel(0);
+  if (slides.length > 1) {
+    startAutoplay();
+  }
+}
 // --------------------------------------------------
 //  Service Worker Registration for Performance & Offline Support
 // --------------------------------------------------
