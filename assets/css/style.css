@@ -1459,6 +1459,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-style: italic;
 }
 
+.resume-subtitle a {
+  color: var(--orange-yellow-crayola);
+  transition: var(--transition-1);
+}
+
+.resume-subtitle a:hover {
+  text-decoration: underline;
+  color: var(--white-1);
+}
+
 .resume-description {
   color: var(--light-gray);
   font-size: var(--fs-6);

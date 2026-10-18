@@ -1,14 +1,14 @@
 // Service Worker for Portfolio Site
-// Version 1.0.0
-const CACHE_NAME = 'warid-portfolio-v1';
-const RUNTIME_CACHE = 'runtime-cache-v1';
+// Version 1.0.1
+const CACHE_NAME = 'warid-portfolio-v2';
+const RUNTIME_CACHE = 'runtime-cache-v2';
 
 // Assets to cache on install (critical resources)
 const PRECACHE_ASSETS = [
   '/',
   '/index.html',
   '/assets/css/style.css',
-  '/assets/js/script.js',
+  '/assets/js/main.js',
   '/assets/images/my-avatar.png',
   '/assets/images/logo.ico'
 ];
